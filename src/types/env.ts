@@ -4,6 +4,13 @@ export type Env = {
   Bindings: {
     DISCORD_WEBHOOK_URL: string;
     CONTACT_FROM_ADDRESS: string;
-    EMAIL: EmailSender;
+    // 自動返信のプロバイダ: "cloudflare"(既定)または "resend"
+    EMAIL_PROVIDER?: string;
+    // Cloudflare Email Service(send_email バインディング)
+    EMAIL?: EmailSender;
+    // Resend を使う場合のAPIキー(シークレット)
+    RESEND_API_KEY?: string;
+    // Resend の差出人(検証済み: noreply@notify.kmmz.jp)
+    RESEND_FROM_ADDRESS?: string;
   };
 };

@@ -17,9 +17,7 @@ contactRoute.post("/", zValidator("json", contactSchema), async (c) => {
   }
 
   // 自動返信は失敗しても問い合わせ自体は成功扱いにする
-  c.executionCtx.waitUntil(
-    sendAutoReply(c.env.EMAIL, c.env.CONTACT_FROM_ADDRESS, data).catch(() => {})
-  );
+  c.executionCtx.waitUntil(sendAutoReply(c.env, data).catch(() => {}));
 
   return c.json({ success: true });
 });

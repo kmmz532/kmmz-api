@@ -9,7 +9,11 @@
     }
   ],
   "vars": {
-    "CONTACT_FROM_ADDRESS": "noreply@kmmz.jp"
+    "CONTACT_FROM_ADDRESS": "noreply@kmmz.jp",
+    // 自動返信プロバイダ: "cloudflare"(既定) または "resend"
+    "EMAIL_PROVIDER": "cloudflare",
+    // Resend 利用時の差出人(検証済みドメイン)
+    "RESEND_FROM_ADDRESS": "noreply@notify.kmmz.jp"
   },
   "observability": {
     "enabled": true
