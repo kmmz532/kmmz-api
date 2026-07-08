@@ -3,6 +3,12 @@
   "name": "kmmz-api",
   "main": "src/index.ts",
   "compatibility_date": "2026-07-08",
+  "routes": [
+    {
+      "pattern": "api.kmmz.jp",
+      "custom_domain": true
+    }
+  ],
   "send_email": [
     {
       "name": "EMAIL"
