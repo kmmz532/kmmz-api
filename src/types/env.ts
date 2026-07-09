@@ -16,5 +16,7 @@ export type Env = {
     ADMIN_EMAIL?: string;
     // 管理者宛先: スパム以外のみ受信(例: me@kmmz.jp)
     ADMIN_EMAIL_STRICT?: string;
+    // Turnstile の Secret Key(シークレット)
+    TURNSTILE_SECRET_KEY: string;
   };
 };

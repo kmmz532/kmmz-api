@@ -6,3 +6,6 @@ DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/xxxx/yyyy
 
 # Resend APIキー
 # RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxxxxxx
+
+# Turnstile
+# TURNSTILE_SECRET_KEY=0xxxxxxxxxxxxxxxxx

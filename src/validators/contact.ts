@@ -7,3 +7,8 @@ export const contactSchema = z.object({
 });
 
 export type ContactInput = z.infer<typeof contactSchema>;
+
+// リクエスト本文(問い合わせ内容 + Turnstile トークン)
+export const contactRequestSchema = contactSchema.extend({
+  token: z.string().min(1),
+});
