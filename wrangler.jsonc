@@ -19,7 +19,11 @@
     // 自動返信プロバイダ: "cloudflare"(既定) または "resend"
     "EMAIL_PROVIDER": "cloudflare",
     // Resend 利用時の差出人(検証済みドメイン)
-    "RESEND_FROM_ADDRESS": "noreply@notify.kmmz.jp"
+    "RESEND_FROM_ADDRESS": "noreply@notify.kmmz.jp",
+    // 管理者通知: 常に受信
+    "ADMIN_EMAIL": "contact@kmmz.jp",
+    // 管理者通知: スパム以外のみ受信(メインメール)
+    "ADMIN_EMAIL_STRICT": "me@kmmz.jp"
   },
   "observability": {
     "enabled": true

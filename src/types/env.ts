@@ -12,5 +12,9 @@ export type Env = {
     RESEND_API_KEY?: string;
     // Resend の差出人(検証済み: noreply@notify.kmmz.jp)
     RESEND_FROM_ADDRESS?: string;
+    // 管理者宛先: 常に受信(例: contact@kmmz.jp)
+    ADMIN_EMAIL?: string;
+    // 管理者宛先: スパム以外のみ受信(例: me@kmmz.jp)
+    ADMIN_EMAIL_STRICT?: string;
   };
 };
